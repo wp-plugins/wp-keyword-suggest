@@ -1,9 +1,8 @@
 === WP Keyword Suggest ===
 Contributors: nicolasmarin
-Donate link: http://www.keyword-statistics.net
 Tags: seo, keywords, suggestions, keyword research, tag suggestions, title suggestions, google, yahoo, bing, amazon, blekko
 Requires at least: 3.0
-Tested up to: 3.5.2
+Tested up to: 3.6
 Stable tag: 1.0
 License: GPLv2 or later
 
@@ -40,6 +39,3 @@ Upload the WP Keyword Suggest plugin to your blog, Activate it.
 == Screenshots ==
 
 1. Enter a keyword for suggest
-
-== Changelog ==
-
