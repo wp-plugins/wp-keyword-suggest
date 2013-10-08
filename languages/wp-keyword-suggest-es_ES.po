@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP SEO Title v1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-23 19:10+0100\n"
-"PO-Revision-Date: 2013-08-29 17:40+0100\n"
+"POT-Creation-Date: 2013-10-08 18:37+0100\n"
+"PO-Revision-Date: 2013-10-08 18:37+0100\n"
 "Last-Translator: Nicolás Marín Torres <nicolas@archivados.com>\n"
 "Language-Team:  <nicolas@archivados.com>\n"
 "Language: es_ES\n"
@@ -16,19 +16,25 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../wp-keyword-suggest.php:56
-msgid "WP Keyword Suggest"
-msgstr "WP Keyword Suggest"
-
-#: ../js/wp-keyword-suggest-js.php:22
+#: ../wp-keyword-suggest.php:39 ../trunk/wp-keyword-suggest.php:39
 msgid "Please enter a keyword and try again."
 msgstr "Por favor, introduzca una palabra clave y vuelva a intentarlo."
 
+#: ../wp-keyword-suggest.php:50 ../trunk/wp-keyword-suggest.php:50
+msgid "WP Keyword Suggest"
+msgstr "WP Keyword Suggest"
+
 #: ../inc/meta-box-wp-keyword-suggest.php:2
+msgid "Enter 2-3 word phrases"
+msgstr "Introduce 2-3 palabras"
+
+#: ../inc/meta-box-wp-keyword-suggest.php:3
+#: ../trunk/inc/meta-box-wp-keyword-suggest.php:2
 msgid "Enter a keyword"
 msgstr "Introduzca una palabra clave"
 
-#: ../inc/meta-box-wp-keyword-suggest.php:3
+#: ../inc/meta-box-wp-keyword-suggest.php:4
+#: ../trunk/inc/meta-box-wp-keyword-suggest.php:3
 msgid "Suggest"
 msgstr "Sugerir"
 

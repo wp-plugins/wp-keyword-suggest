@@ -28,21 +28,25 @@ class wpks_api
         $rsp_json = wp_remote_fopen($url);
         $array_urls = json_decode($rsp_json);
 
-        foreach($array_urls as $item)
+        if(is_array($array_urls))
         {
-            $params[$item->service] = wp_remote_fopen($item->url);
+           foreach($array_urls as $item)
+            {
+                $params[$item->service] = wp_remote_fopen($item->url);
+            }
+
+            foreach ($params as $k => $v)
+            {
+                $v = utf8_encode($v);
+                $p[] = $k . '=' . urlencode($v);
+            }
+
+            $url = 'http://www.seowp.es/wpks/keywords_list.php?q='.$q . '&' . implode('&', $p);
+            $keywords_list = wp_remote_fopen($url);
+
+            return $keywords_list; 
         }
-
-        foreach ($params as $k => $v)
-        {
-            $v = utf8_encode($v);
-            $p[] = $k . '=' . urlencode($v);
-        }
-
-        $url = 'http://www.seowp.es/wpks/keywords_list.php?q='.$q . '&' . implode('&', $p);
-        $keywords_list = wp_remote_fopen($url);
-
-        return $keywords_list;
+        
     }
 }
 
