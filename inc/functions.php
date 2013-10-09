@@ -33,7 +33,7 @@ class wpks_api
         {
            foreach($array_urls as $item)
             {
-                $params[$item->service] = wp_remote_fopen($item->url);
+                $params[$item->service] = utf8_encode(wp_remote_fopen($item->url));
             }
 
             $url = 'http://www.seowp.es/wpks/keywords_list.php';
