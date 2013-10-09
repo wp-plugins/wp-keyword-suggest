@@ -24,7 +24,7 @@ class wp_keyword_suggest_suggestions
 	
 	static function activation()
 	{
-		add_option( 'wpks_intense', 'low');
+		add_option( 'wpks_intense', 'high');
 	}
 	
 	static function deactivation()
