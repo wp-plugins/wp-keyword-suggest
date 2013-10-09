@@ -15,6 +15,7 @@ class wp_keyword_suggest_suggestions
 {
 	function __construct()
 	{
+		add_action( 'admin_menu', array( &$this, 'admin_menu' ) );
 		add_action( 'admin_init', array( &$this, 'admin_init' ) );
 		add_action( 'wp_ajax_wpks_keyword_suggestions', array( &$this, 'ajax_suggestions' ) );
 		add_action( 'add_meta_boxes', array(__CLASS__, 'add_meta_boxes') );
@@ -23,12 +24,12 @@ class wp_keyword_suggest_suggestions
 	
 	static function activation()
 	{
-
+		add_option( 'wpks_intense', 'low');
 	}
 	
 	static function deactivation()
 	{
-		
+		delete_option( 'wpks_intense' );
 	}
 	
 	function admin_init()
@@ -43,6 +44,18 @@ class wp_keyword_suggest_suggestions
 		if ( is_admin() && ( isset( $_GET['page'] ) && $_GET['page'] == 'wpks_options' ) ) :
 			wp_enqueue_style( 'wp-keyword-suggest_suggestions', WP_PLUGIN_URL . '/' . basename( dirname( __FILE__ ) ) . '/css/wp-keyword-suggest.css' );
 		endif;
+	}
+
+	function admin_menu()
+	{
+		if (function_exists('add_options_page')) {
+			add_options_page(__('WP Keyword Suggest', _PLUGIN_NAME_), __('WP Keyword Suggest', _PLUGIN_NAME_), 'manage_options', 'wp-keyword-suggest-options', array( $this, 'admin_options' )) ;
+		}
+	}
+
+	function admin_options()
+	{
+		include 'inc/wpks-admin.php';
 	}
 
 	function add_meta_boxes()

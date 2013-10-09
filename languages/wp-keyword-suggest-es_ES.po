@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP SEO Title v1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-08 18:37+0100\n"
-"PO-Revision-Date: 2013-10-08 18:37+0100\n"
+"POT-Creation-Date: 2013-10-09 12:31+0100\n"
+"PO-Revision-Date: 2013-10-09 12:34+0100\n"
 "Last-Translator: Nicolás Marín Torres <nicolas@archivados.com>\n"
 "Language-Team:  <nicolas@archivados.com>\n"
 "Language: es_ES\n"
@@ -16,25 +16,56 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../wp-keyword-suggest.php:39 ../trunk/wp-keyword-suggest.php:39
+#: ../wp-keyword-suggest.php:40 ../trunk/wp-keyword-suggest.php:39
 msgid "Please enter a keyword and try again."
 msgstr "Por favor, introduzca una palabra clave y vuelva a intentarlo."
 
-#: ../wp-keyword-suggest.php:50 ../trunk/wp-keyword-suggest.php:50
+#: ../wp-keyword-suggest.php:52 ../wp-keyword-suggest.php:63
+#: ../trunk/wp-keyword-suggest.php:50
 msgid "WP Keyword Suggest"
 msgstr "WP Keyword Suggest"
 
+#: ../inc/wpks-admin.php:29
+msgid "WP Keyword Suggest Options"
+msgstr "WP Keyword Suggest Options"
+
+#: ../inc/wpks-admin.php:34
+msgid "Intense"
+msgstr "Intensidad"
+
+#: ../inc/wpks-admin.php:38
+msgid "Low (up to 30 keywords ideas)"
+msgstr "Baja (hasta 30 ideas de keywords)"
+
+#: ../inc/wpks-admin.php:38
+msgid "High (up to 260 keywords ideas)"
+msgstr "Alta (hasta 260 ideas de keywords)"
+
+#: ../inc/wpks-admin.php:47
+msgid ""
+"Important note: few seconds loading time in LOW and half minute to a minute "
+"in HIGH. HIGH is only available for Latin languages."
+msgstr ""
+"Nota importante: la intensidad baja carga en pocos segundos y la alta tarda "
+"de medio a un minuto aproximadamente en cargar. Alta está sólo disponible "
+"para lenguas con caracteres latinos."
+
+#: ../inc/wpks-admin.php:52
+msgid "Save Changes"
+msgstr "Guardar cambios"
+
 #: ../inc/meta-box-wp-keyword-suggest.php:2
+#: ../trunk/inc/meta-box-wp-keyword-suggest.php:2
 msgid "Enter 2-3 word phrases"
 msgstr "Introduce 2-3 palabras"
 
 #: ../inc/meta-box-wp-keyword-suggest.php:3
-#: ../trunk/inc/meta-box-wp-keyword-suggest.php:2
+#: ../trunk/inc/meta-box-wp-keyword-suggest.php:3
 msgid "Enter a keyword"
 msgstr "Introduzca una palabra clave"
 
 #: ../inc/meta-box-wp-keyword-suggest.php:4
-#: ../trunk/inc/meta-box-wp-keyword-suggest.php:3
+#: ../trunk/inc/meta-box-wp-keyword-suggest.php:4
 msgid "Suggest"
 msgstr "Sugerir"
 
@@ -82,9 +113,6 @@ msgstr "Sugerir"
 
 #~ msgid "DESC: for a descending sort. ASC: for a ascending sort"
 #~ msgstr "DESC: orden descendiente. ASC: orden ascendente."
-
-#~ msgid "Save Changes"
-#~ msgstr "Guardar cambios"
 
 #~ msgid "Keyword"
 #~ msgstr "Palabra clave"
