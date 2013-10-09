@@ -3,7 +3,7 @@
 Plugin Name: WP Keyword Suggest
 Plugin URI: http://seowp.es/wp-keyword-suggest
 Description: This SEO plugin offers keyword suggestions, taken from autocomplete google, yahoo, bing, amazon, blekko
-Version: 1.0
+Version: 1.1
 Author: nicolasmarin
 Author URI: http://www.nicolasmarin.com/
 */

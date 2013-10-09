@@ -20,14 +20,23 @@ This plugin helps you generate ideas for your post.
 
 For example if you want to write a post about 'Keyword Reasearch Tool', these are tips that shows you:
 * Keyword research tool
+
 * Free keyword research tools
+
 * Keyword research tool review
+
 * Google keyword research tools
+
 * Keyword research tool online
+
 * Keyword research seo tool
+
 * Bing keyword research tool
+
 * Keyword research tools 2013
+
 * Keyword research tools list
+
 * Free online keyword research tool
 
 This plugin makes to calls to seowp.es, the first one to create the URLs of the autocomplete service, and the second one to filter and complete the results. Does not require registration.
