@@ -2,7 +2,7 @@
 Contributors: nicolasmarin
 Tags: seo, keywords, suggestions, keyword research, tag suggestions, title suggestions, google, yahoo, bing, long tail, post, posts
 Requires at least: 3.0
-Tested up to: 3.6
+Tested up to: 3.7
 Stable tag: 1.2
 License: GPLv2 or later
 
@@ -10,13 +10,7 @@ This SEO plugin offers keyword suggestions, taken from autocomplete google, yaho
 
 == Description ==
 
-With this plugin you will be able to take advantage of long tail keyword so you can learn more about your niche.
-
-From the list of keywords suggested you can put it directly in the title of your article or add it as a tag.
-
-It is very easy to use, from the same page to add item, it shows the widget in the left menu.
-
-This plugin helps you generate ideas for your post.
+With this plugin you will be able to take advantage of long tail keyword so you can learn more about your niche. From the list of keywords suggested you can put it directly in the title of your article or add it as a tag. It is very easy to use, from the same page to add item, it shows the widget in the left menu. This plugin helps you generate ideas for your post.
 
 For example if you want to write a post about 'Keyword Reasearch Tool', these are tips that shows you:
 
@@ -42,7 +36,7 @@ For example if you want to write a post about 'Keyword Reasearch Tool', these ar
 
 This plugin makes to calls to seowp.es, the first one to create the URLs of the autocomplete service, and the second one to filter and complete the results. Does not require registration.
 
-[YouTube](http://www.youtube.com/watch?v=vO64yHrHknA "Watch a demo")
+[Watch a demo](http://www.youtube.com/watch?v=vO64yHrHknA "YouTube")
 
 
 == Installation ==
