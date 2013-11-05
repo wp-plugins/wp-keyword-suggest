@@ -42,7 +42,7 @@ For example if you want to write a post about 'Keyword Reasearch Tool', these ar
 
 This plugin makes to calls to seowp.es, the first one to create the URLs of the autocomplete service, and the second one to filter and complete the results. Does not require registration.
 
-See demo video on:
+[YouTube](http://www.youtube.com/watch?v=vO64yHrHknA "Watch a demo")
 
 
 == Installation ==
