@@ -3,7 +3,7 @@ Contributors: nicolasmarin
 Tags: seo, keywords, suggestions, keyword research, tag suggestions, title suggestions, google, yahoo, bing, long tail, post, posts
 Requires at least: 3.0
 Tested up to: 3.7
-Stable tag: 1.2
+Stable tag: 1.1.1
 License: GPLv2 or later
 
 This SEO plugin offers keyword suggestions, taken from autocomplete google, yahoo, bing... up to 250 keywords ideas
@@ -49,7 +49,7 @@ Upload the WP Keyword Suggest plugin to your blog, Activate it.
 
 == Changelog ==
 
-= 1.2 =
+= 1.1.1 =
 Autocomplete when you enter the keyword.
 
 = 1.1 =
