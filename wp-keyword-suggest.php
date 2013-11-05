@@ -3,7 +3,7 @@
 Plugin Name: WP Keyword Suggest
 Plugin URI: http://seowp.es/wp-keyword-suggest
 Description: This SEO plugin offers keyword suggestions, taken from autocomplete google, yahoo, bing, amazon, blekko
-Version: 1.1
+Version: 1.0
 Author: nicolasmarin
 Author URI: http://www.nicolasmarin.com/
 */
@@ -24,7 +24,7 @@ class wp_keyword_suggest_suggestions
 	
 	static function activation()
 	{
-		add_option( 'wpks_intense', 'high');
+		add_option( 'wpks_intense', 'low');
 	}
 	
 	static function deactivation()
@@ -35,10 +35,12 @@ class wp_keyword_suggest_suggestions
 	function admin_init()
 	{
 		if ( is_admin() && ( strpos( $_SERVER['SCRIPT_NAME'], 'post-new.php' ) || strpos( $_SERVER['SCRIPT_NAME'], 'post.php' ) ) !== false ) :
-			wp_enqueue_script( 'wp-keyword-suggest_suggestions', WP_PLUGIN_URL . '/' . basename( dirname( __FILE__ ) ) . '/js/wp-keyword-suggest.js' );
+			wp_enqueue_script( 'wp-keyword-gcomplete', WP_PLUGIN_URL . '/' . basename( dirname( __FILE__ ) ) . '/js/jquery.gcomplete.0.1.2.js' );
+		    wp_enqueue_script( 'wp-keyword-suggest_suggestions', WP_PLUGIN_URL . '/' . basename( dirname( __FILE__ ) ) . '/js/wp-keyword-suggest.js' );
 			wp_localize_script( 'wp-keyword-suggest_suggestions', 'objectL10n', array(
 				'please_enter_keyword'  => __('Please enter a keyword and try again.', _PLUGIN_NAME_)
 			) );
+			wp_enqueue_style( 'wp-keyword-gcomplete', WP_PLUGIN_URL . '/' . basename( dirname( __FILE__ ) ) . '/css/jquery.gcomplete.default-themes.css' );
 			wp_enqueue_style( 'wp-keyword-suggest_suggestions', WP_PLUGIN_URL . '/' . basename( dirname( __FILE__ ) ) . '/css/wp-keyword-suggest.css' );
 		endif;
 		if ( is_admin() && ( isset( $_GET['page'] ) && $_GET['page'] == 'wpks_options' ) ) :

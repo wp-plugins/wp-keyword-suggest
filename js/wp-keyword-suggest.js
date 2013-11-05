@@ -31,4 +31,10 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 	});
 
+	jQuery("#wpks-keyword").gcomplete({
+		style: "default",
+		effect: false,
+		pan: '#wpks-keyword'
+	});
+
 });
